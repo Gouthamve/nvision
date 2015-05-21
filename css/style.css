@@ -504,7 +504,7 @@ Main content
 
 .cd-item p {
   line-height: 1.2;
-  font-size: 1.4rem;
+  font-size: 21px;
   opacity: 0.6;
   padding: 1em 0;
 }
@@ -535,7 +535,7 @@ Main content
   }
 
   .cd-item p {
-    font-size: 1.8rem;
+    font-size: 21px;
   }
 
   .cd-item h2, .cd-item p {
@@ -884,7 +884,6 @@ folding panel
 
 .cd-fold-content p {
   margin-bottom: 1em;
-  margin-top: 1em;
   font-size: 2rem;
   font-family:'lobster two';
   -webkit-transition: -webkit-transform 0.2s 0s, opacity 0.2s 0s;
@@ -1457,15 +1456,26 @@ main p {
 }
 
 .model-2 .twitter:hover, .model-2 .facebook:hover, .model-2 .google-plus:hover {
-  background: #656D78;
+  background:#E6E9ED;
   -webkit-transition: background 0.4s linear;
   -moz-transition: background 0.4s linear;
   -o-transition: background 0.4s linear;
   transition: background 0.4s linear;
   text-shadow:none;
-  box-shadow:2px 2px #656D78;
+  box-shadow:2px 2px 3px #656D78;
 }
 
+.model-2 .twitter:hover{
+    color:#00ACED;
+}
+
+.model-2 .facebook:hover{
+    color:#3B579D;
+}
+
+.model-2 .google-plus:hover {
+    color:#DD4A3A;
+}
 /*---------------Main logo & logo text ------------------*/
   
 .main-logo{
@@ -1801,6 +1811,7 @@ em{
   #image_container img{
     position:absolute;
     width:100%;
+    height:100%;
     top:-50px;
     cursor:pointer;
     border-radius: 5px;
