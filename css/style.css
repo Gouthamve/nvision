@@ -504,7 +504,7 @@ Main content
 
 .cd-item p {
   line-height: 1.2;
-  font-size: 21px;
+  font-size: 1.6rem;
   opacity: 0.6;
   padding: 1em 0;
 }
@@ -535,7 +535,7 @@ Main content
   }
 
   .cd-item p {
-    font-size: 21px;
+    font-size: 1.8rem;
   }
 
   .cd-item h2, .cd-item p {
