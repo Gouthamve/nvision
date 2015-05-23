@@ -953,7 +953,7 @@ folding panel
   }
   .cd-fold-content p {
     font-size: 2rem;
-    font-family:'lobster two';
+    font-family: 'helvetica';
   }
 }
 
@@ -1493,7 +1493,7 @@ main p {
   font-size: 1.5em;
   font-weight: 700;
   z-index: 3;
-  font-family: "Lobster Two",cursive !important;
+  font-family:  "open sans";
   border-radius: 4px;
   padding: 10px;
   color: #434A54;
