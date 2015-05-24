@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 		<meta name="description" content="&eta;vision is the technical fest of IIT Hyderabad usually held in month of November.">
-		<meta name="author" content="&eta;vision 2015">
+		<meta name="author" content="Nvision 2015">
 		<meta name="keyword" content="technical, IIT Hyderabad, fest, competitions, events">
 		<meta name="robots" content="index, follow">
 		<!-- Insert Google site verification meta -->
@@ -28,11 +28,12 @@
 		<!-- Stylesheets and scripts -->
 		<link rel="shortcut icon" href="img/logo.png">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
-		<link href="http://fonts.googleapis.com/css?family=Bitter|Lobster|Lobster+Two|Slabo+27px|Roboto+Slab:700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Bitter|Slabo+27px|Roboto+Slab:700" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/style.css"> 
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/team.css">
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 		<script src="js/modernizr.js"></script>
 	</head>
 	<body>
@@ -74,12 +75,16 @@
 					</ul>
 					<ul class="main-logo">
 						<li>
-							<a class="logo" href="#cd-nav">
-								<img src="img/logo.png" title="&eta;vision logo" alt="&eta;vision logo" width="70" height="70"></img>
-							</a>
+							<img src="img/font_new.png" title="&eta;vision logo" alt="&eta;vision logo" width="300" height="200" id="logo">
+							<script>
+							$(function(){
+								var a=document.getElementById("logo");
+								if(screen.width<=700) a.width=200;
+							});
+							</script>
 						</li>
 					</ul>
-					<div class="logo_text"> &eta;vision 2k15</div>
+					<!-- <div class="logo_text"> &eta;vision 2k15</div> -->
 					<div class="button_wrapper cd-nav-trigger2">
 						<a class="ripplelink color" href="#cd-nav"> Explore </a>
 					</div>
@@ -91,12 +96,12 @@
 					<div id="contact_screen">
 						<div id="shadow">
 							<div>
-	   							<span class="close-btn"><a href="#" style="font-size:30px;">X</a></span>
+	   							<span class="close-btn"><a href="#" style="font-size:25px;">X</a></span>
 							</div>
 						</div>
 						<div id="contact_container">
 							<div id="contact_topic">
-							<h2 class="ripplelink color" style="position:fixed;width:290px;"> &eta;vision2015 Marketing </h2>
+							<h2 class="ripplelink2"> &eta;vision2015 Marketing </h2>
 							</div>
 							<div class="team-member">
 					            <em>Ramoji Rao</em>
@@ -166,7 +171,7 @@
 							<a href="about_us.html">	
 			    				<div>
 									<h2>About Us</h2>
-									<p>&eta;vision- The technomanagement fest of IIT Hyderabad</p>
+									<p>&eta;vision | The techno-management fest of IIT Hyderabad</p>
 									<b>View More</b>
 								</div>
 							</a>
@@ -222,12 +227,13 @@
 		<script src="js/pushing.js"></script>
 		<script src="js/keyboard-shortcut.js"></script>
 		<script src="js/load.js"></script>
-
+		<script src="js/jquery.mCustomScrollbar.js"></script>
+		<script src="js/jquery.mousewheel.min.js"></script>
 		<!-- for ripple effect -->
 		<script type="text/javascript">
 			$(function(){
 				var ink, d, x, y;
-				$(".ripplelink").click(function(e){
+				$(".ripplelink, .ripplelink2").click(function(e){
 				    if($(this).find(".ink").length === 0){
 				        $(this).prepend("<span class='ink'></span>");
 			   		 }
@@ -254,10 +260,20 @@
 					$("#contact_screen").fadeIn(400);
 				});
 
-				$(".close-btn").click(function(){
+				$(".close-btn, #shadow").click(function(){
 					$("#contact_screen").hide(400);
 				});
 			});
+		</script>
+
+		<script>
+			(function($){
+				$(window).load(function(){
+					$("#contact_container, .cd-nav").mCustomScrollbar({
+						mouseWheelPixels: 500
+					});
+				});
+			})(jQuery);
 		</script>
 	</body>
 	<!-- Designed and Developed by Nvision Web -->
