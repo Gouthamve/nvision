@@ -24,21 +24,15 @@
   margin:auto;
   z-index: 1001;
   text-align:center;
-  top:10px;
-}
-   
-@media only screen and (max-width:700px){
-  #loader{
-  position:absolute;
-  top:2%;
-  }
+  height:100%;
+  width:100%;
 }
 
 #loader img{
   position:relative;
-  width:90%;
   z-index:1002;
-  margin-top: 2%;
+  width:100%;
+  height:100%;
 }
 
 /* Loaded */
@@ -402,6 +396,7 @@ Main content
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
+    overflow-x:hidden;
   }
 }
 
@@ -409,6 +404,7 @@ Main content
   clear: both;
   content: "";
   display: table;
+  overflow-x:hidden;
 }
 
 .cd-gallery::before {
@@ -536,7 +532,7 @@ Main content
   }
 
   .cd-item p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .cd-item h2, .cd-item p {
@@ -840,7 +836,7 @@ folding panel
 .cd-fold-content {
   overflow-y:auto;
   position: absolute;
-  top: 0px;
+  top: -30px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -1224,7 +1220,6 @@ main p {
 .cd-nav .cd-navigation-wrapper {
   /* all navigation content */
   height: 100%;
-  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 40px 20px;
   /* Force Hardware Acceleration in WebKit */
@@ -1480,59 +1475,59 @@ main p {
 /*---------------Main logo & logo text ------------------*/
   
 .main-logo{
-  position:fixed;
   z-index:10;
   padding:0px;
   list-style: none outside none;
   display:inline-block;
-  margin:10px auto;
+  cursor:pointer;
 }  
 
-.logo_text{
+/*.logo_text{
   position: absolute;
   font-size: 1.5em;
   font-weight: 700;
   z-index: 3;
-  font-family:  "open sans";
+  font-family: calibri light !important;
   border-radius: 4px;
   padding: 10px;
-  color: #434A54;
+  color: white;
 }
+*/
 
 @media only screen and (min-width: 928px){
   .main-logo{
-    position:relative;
-    top:10px;
-    left:48%;
+    position: absolute;
+    left: 40%;
+    top: -50px;
   }
 
-  .logo_text{
+ /* .logo_text{
     left: 44%;
-    top: 80px;
-    font-size:40px;
-    color:#434A54;
+    top: 20px;
+    font-size: 40px;
+    color: #FFF;
+    position: relative;
   }
+*/
 }
 
  @media only screen and (max-width: 928px){
   .main-logo{
-    position:absolute;
-    top:8px;
-    right:10%;
+    position: absolute;
+    top: -50px;
+    right:1px;
   }
 
-  .logo_text{
-    top:90px;
-    right:3%;
+  .main-logo img{
+    width:200!important;
   }
 }
-
 
 .main-logo li{
   display:inline-block;
 }
 
-.main-logo a{
+/*.main-logo a{
   display:inline-block;
   float:left;
   width:48px;
@@ -1545,6 +1540,7 @@ main p {
   position:relative;
   transition:all 0.5s ease 0s;
 }
+*/
 
 ul>li a.logo{
   position:relative;
@@ -1716,24 +1712,37 @@ ul>li a.logo{
   text-align: center;
   margin: auto;
   z-index: 7200;
-  top: 16%;
+  top: 15%;
   width: 290px;
   height: 400px;
   background-color:rgba(41, 102, 82, 0.8);
   box-shadow: 2px 2px 15px;
 }
 
+.ripplelink2{
+  position: relative;
+  color: #FFF;
+  padding: 10px;
+  width: 290px;
+  border-radius: 2px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .close-btn {
   z-index: 9000;
-  position: absolute;
+  position: relative;
   margin: auto;
-  top: 20px;
-  right: 5%;
   border: 1px solid #C2C2C2;
-  padding: 5px 10px;
   background-color: #DA4453;
   border-radius: 5px;
-  box-shadow: 5px 3px 3px;
+  left: 80%;
+  top: 30px;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 1px 1px 3px #C2C2C2;
 }
 
 .close-btn a {
@@ -1741,6 +1750,7 @@ ul>li a.logo{
     font-weight: bold;
     color: white;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 ul.social-buttons {
@@ -1792,7 +1802,7 @@ ul.social-buttons li a i.fa-envelope:hover{
     text-align: center;
     color: #FFF;
     position: relative;
-    top: 70px;
+    top: 30px;
 }
 
 em{
@@ -1810,31 +1820,37 @@ em{
   }
 
   #image_container img{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:-50px;
-    cursor:pointer;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    cursor: pointer;
     border-radius: 5px;
-    box-shadow: 1px 2px 5px #000;
   }
 
   .ca_content{
-    position:relative;
-    text-align:justify;
-    line-height:1.3em !important;
-    font-family:helvetica;
-    bottom:20px;
+    line-height: 1.3em !important;
+    font-family: helvetica;
+    top: 700px;
+    text-align: justify;
+    right: 30px;
+    position: absolute;
+    left: 30px;
   }
 
-  #ca_content{
+  #ca-content{
     color:white;
   }
 
   #form_link{
-    cursor:pointer;
-    font-weight:700;
-    font-family:font-family:'Open Sans';
+    cursor: pointer;
+    font-weight: 700;
+    position: relative;
+    bottom: 20px;
   }
 
 /*--------------------CA Portal styling ends -----------------*/
+
+/*--------------------Custom scrollbar ----------------------*/
+.mCSB_scrollTools{
+  right:-5px!important;
+}
