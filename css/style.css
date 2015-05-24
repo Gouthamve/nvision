@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background-color:#5282b2;
+    background-color:#397cb5;
 }
 
 #loader {
@@ -24,13 +24,13 @@
   margin:auto;
   z-index: 1001;
   text-align:center;
-  top:-30px;
+  top:10px;
 }
    
 @media only screen and (max-width:700px){
   #loader{
   position:absolute;
-  top:20%;
+  top:2%;
   }
 }
 
@@ -38,7 +38,7 @@
   position:relative;
   width:90%;
   z-index:1002;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 /* Loaded */
@@ -886,7 +886,7 @@ folding panel
 .cd-fold-content p {
   margin-bottom: 1em;
   font-size: 2rem;
-  font-family:'lobster two';
+  font-family:'Open Sans';
   -webkit-transition: -webkit-transform 0.2s 0s, opacity 0.2s 0s;
   -moz-transition: -moz-transform 0.2s 0s, opacity 0.2s 0s;
   transition: transform 0.2s 0s, opacity 0.2s 0s;
@@ -1633,7 +1633,7 @@ ul>li a.logo{
   z-index:10;
   width:100%;
   font-weight:600;
-  font-family:'Lobster Two', cursive;
+  font-family:'Open Sans';
   font-size:2.5rem;
   text-align:center;
   line-height:1.3em;
@@ -1834,7 +1834,7 @@ em{
   #form_link{
     cursor:pointer;
     font-weight:700;
-    font-family:font-family:'Lobster Two', cursive;
+    font-family:font-family:'Open Sans';
   }
 
 /*--------------------CA Portal styling ends -----------------*/
