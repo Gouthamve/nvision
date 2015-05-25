@@ -1220,6 +1220,7 @@ main p {
 .cd-nav .cd-navigation-wrapper {
   /* all navigation content */
   height: 100%;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 40px 20px;
   /* Force Hardware Acceleration in WebKit */
