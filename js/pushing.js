@@ -4,6 +4,7 @@ jQuery(document).ready(function($){
 	//open/close lateral navigation
 	$('.cd-nav-trigger').on('click', function(event){
 		event.preventDefault();
+    $("#contact_screen").hide(400);
 		//stop if nav animation is running 
 		if( !isLateralNavAnimating ) {
 			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
