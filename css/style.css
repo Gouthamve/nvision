@@ -1275,16 +1275,6 @@ main p {
   color:inherit;
 }
 
-.cd-nav h2::after {
-  /* bottom separation line */
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-  height: 1px;
-  width: 60px;
-  background-color: currentColor;
-}
 .cd-nav .cd-primary-nav {
   margin-top: 60px;
 }
