@@ -142,7 +142,7 @@ h1, h2{font-family:"Roboto", serif;}
 @media only screen and (min-width:1100px){.cd-fold-content{padding:4em;color:white;background-color:rgb(38, 166, 154);}
 .cd-fold-content > *{-webkit-transform:translateY(40px);-moz-transform:translateY(40px);-ms-transform:translateY(40px);-o-transform:translateY(40px);transform:translateY(40px);}
 .cd-fold-content em{font-size:2.2rem;}
-.cd-fold-content p{font-size:2rem;font-family:'helvetica';}
+.cd-fold-content p{font-size:2rem;}
 }
 .no-js .cd-fold-content.single-page{position:static;visibility:visible;height:auto;background-color:#dadcdc;}
 .no-js .cd-fold-content.single-page > *{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);}
@@ -155,7 +155,7 @@ a{text-decoration:none;}
 main{position:relative;z-index:2;height:100vh;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:200px 5%;background-color:#9cb3a8;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:-webkit-transform 0.7s;-moz-transition:-moz-transform 0.7s;transition:transform 0.7s;-webkit-transition-timing-function:cubic-bezier(0.91, 0.01, 0.6, 0.99);-moz-transition-timing-function:cubic-bezier(0.91, 0.01, 0.6, 0.99);transition-timing-function:cubic-bezier(0.91, 0.01, 0.6, 0.99);}
 main h1, main p{text-align:center;}
 main h1{font-size:2.6rem;margin-bottom:1em;}
-main p{font-family:"Merriweather", serif;color:#d6dfdb;max-width:450px;margin:0 auto;line-height:1.6;}
+main p{font-family:"Roboto:100", serif;color:#d6dfdb;max-width:450px;margin:0 auto;line-height:1.6;}
 .navigation-is-open main{-webkit-transform:translateX(100%);-moz-transform:translateX(100%);-ms-transform:translateX(100%);-o-transform:translateX(100%);transform:translateX(100%);}
 @media only screen and (min-width:768px){main{padding:0px 0px;}
 main h1{font-size:3.6rem;}
