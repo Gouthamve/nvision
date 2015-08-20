@@ -230,14 +230,89 @@ main p{font-size:2rem;}
 }
 .main-logo li{display:inline-block;}
 ul>li a.logo{position:relative;}
-@media only screen and (min-width:928px){.button_wrapper{display:block;width:15%;position:absolute;left:43%;bottom:20px;width:200px;cursor:pointer;}
-.button_wrapper2{display:block;width:15%;position:absolute;right:5%;top:20px;width:200px;cursor:pointer;}
+@media only screen and (min-width: 928px){
+  .button_wrapper{
+    display:block;
+    width:15%;
+    position:absolute;
+    left:43%;
+    bottom:20px;
+    width:200px;
+    cursor:pointer;
+  }
+
+  .button_wrapper2{
+    display:block;
+    width:15%;
+    position:absolute;
+    right:5%;
+    top:20px;
+    width:200px;
+    cursor:pointer;
+  }
+
+  .button_wrapper3{
+    display:block;
+    width:15%;
+    position:absolute;
+    left:5%;
+    bottom:20px;
+    width:200px;
+    cursor:pointer;
+  }
+
 }
-@media only screen and (max-width:928px) and (min-width:450px){.button_wrapper{display:block;width:150px;position:absolute;left:5%;bottom:10px;cursor:pointer;}
-.button_wrapper2{display:block;width:190px;position:absolute;right:5%;bottom:10px;cursor:pointer;}
+
+@media only screen and (max-width: 928px) and (min-width:450px){
+  .button_wrapper{
+    display:block;
+    width:150px;
+    position:absolute;
+    left:5%;
+    bottom:10px;
+    cursor:pointer;
+  }
+
+  .button_wrapper2{
+    display:block;
+    width:190px;
+    position:absolute;
+    right:5%;
+    bottom:10px;
+    cursor:pointer;
+  }
+
+  .button_wrapper3{
+    display:block;
+    width:150px;
+    position:absolute;
+    left:45%;
+    bottom:10px;
+    cursor:pointer;
+  }
 }
-@media only screen and (max-width:450px){.button_wrapper{display:block;width:150px;position:absolute;left:0%;bottom:0px;cursor:pointer;}
-.button_wrapper2{display:block;position:absolute;right:0%;bottom:0px;cursor:pointer;}
+
+@media only screen and (max-width:450px){
+  .button_wrapper{
+    display:none;
+  }
+
+  .button_wrapper2{
+    display:block;
+    position:absolute;
+    right:0%;
+    bottom:0px;
+    cursor:pointer;
+  }
+
+  .button_wrapper3{
+    display:block;
+    width:150px;
+    position:absolute;
+    left:0%;
+    bottom:0px;
+    cursor:pointer;
+  }
 }
 .button_wrapper:after{content:"";display:table;clear:both;}
 .ripplelink{display:block;padding:10px 7px 15px 10px;color:#fff;text-decoration:none;position:relative;overflow:hidden;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease;z-index:10;width:100%;font-weight:600;font-family:'Roboto';font-size:2.5rem;text-align:center;line-height:1.3em;}
